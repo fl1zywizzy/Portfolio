@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Portfolio | Projects</title>
-  <link rel="stylesheet" href="style.css">
+<title>Theo | Projects</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="projects.html">Projects</a>
+</div>
+<button id="darkToggle">Dark Mode</button>
 </nav>
 
-<div class="container">
-  <h1>My Projects</h1>
 
-  <div class="project-card">
-    <h2>Project 1 Title</h2>
-    <p>Description of the project. What you built, what tools you used.</p>
-    <a href="https://github.com/fl1zywizzy/Portfolio.git">GitHub Repo</a>
-  </div>
+<div class="container fade">
+<h1>My Projects</h1>
 
-  <div class="project-card">
-    <h2>Project 2 Title</h2>
-    <p>Description of the project.</p>
-    <a href="https://github.com/your-username/project2">GitHub Repo</a>
-  </div>
+
+<div class="card">
+<h2>Project 1: Secure Login Demo</h2>
+<p>Web-based login mockup demonstrating hashing, sanitization, and secure UI considerations.</p>
+<a href="https://github.com/YOUR_USERNAME/project1">GitHub Repo</a>
+</div>
+
+
+<div class="card">
+<h2>Project 2: Vulnerability Scanner</h2>
+<p>A script that scans dependencies and reports CVSS scores using public databases.</p>
+<a href="https://github.com/YOUR_USERNAME/project2">GitHub Repo</a>
+</div>
+
 
 </div>
 
+
+<script src="script.js"></script>
 </body>
 </html>
