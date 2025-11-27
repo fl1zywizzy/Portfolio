@@ -1,83 +1,60 @@
-/* --- Global Styles --- */
-:root {
---bg: #f4f4f4;
---fg: #1a1a1a;
---card: #ffffff;
---accent: #4a6cf7;
---transition: 0.3s;
+/* --- Global Colors --- */
+body {
+margin: 0;
+font-family: "Inter", sans-serif;
+background: #f2f7ff;
+color: #1a1a1a;
 }
 
 
-/* --- Navigation --- */
 nav {
-background: var(--card);
+background: #ffffff;
 padding: 15px 30px;
-box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 display: flex;
-justify-content: space-between;
-align-items: center;
-position: sticky;
-top: 0;
-z-index: 1000;
+justify-content: flex-start;
+gap: 20px;
 }
 
 
-nav .links a {
-margin-right: 20px;
-color: var(--fg);
+nav a {
 text-decoration: none;
+color: #1a1a1a;
 font-weight: 600;
-transition: color var(--transition);
+border-bottom: 2px solid transparent;
+padding-bottom: 4px;
+transition: 0.3s;
+}
+nav a:hover {
+border-color: #4a6cf7;
+color: #4a6cf7;
 }
 
 
-nav .links a:hover {
-color: var(--accent);
-}
-
-
-/* Dark mode toggle */
-#darkToggle {
-cursor: pointer;
-padding: 8px 14px;
-background: var(--accent);
-color: white;
-border-radius: 6px;
-border: none;
-transition: opacity var(--transition);
-}
-#darkToggle:hover {
-opacity: 0.85;
-}
-
-
-/* --- Layout --- */
 .container {
 max-width: 950px;
-margin: auto;
-padding: 40px 20px;
+margin: 40px auto;
+background: white;
+padding: 40px;
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 
 .card {
-background: var(--card);
-padding: 25px;
-margin-bottom: 20px;
+background: #ffffff;
+border-left: 6px solid #4a6cf7;
+padding: 20px;
 border-radius: 10px;
-box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-transition: transform var(--transition), box-shadow var(--transition);
-}
-.card:hover {
-transform: translateY(-5px);
-box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+margin-bottom: 20px;
+box-shadow: 0 3px 12px rgba(0,0,0,0.05);
 }
 
 
-/* Animation fade-in */
 .fade {
 opacity: 0;
-transform: translateY(20px);
-animation: fadeIn 0.8s forwards;
+animation: fadeIn 0.7s forwards;
+transform: translateY(15px);
 }
 
 
@@ -86,15 +63,14 @@ to { opacity: 1; transform: translateY(0); }
 }
 
 
-/* Buttons */
 .button {
 padding: 12px 16px;
-background: var(--accent);
+background: #4a6cf7;
 color: white;
-text-decoration: none;
 border-radius: 6px;
+text-decoration: none;
 font-weight: bold;
-transition: opacity var(--transition);
+transition: 0.3s;
 }
 .button:hover {
 opacity: 0.85;
