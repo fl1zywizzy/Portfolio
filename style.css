@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+nav {
+  background: #222;
+  padding: 15px;
+}
+
+nav a {
+  color: rgb(151, 135, 135);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
